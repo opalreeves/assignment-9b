@@ -19,7 +19,7 @@ def matrix_mult(A, B):
     for i in range(num_rows_A):
         new_row = []
         
-        for j in range(num_colums_B):
+        for j in range(num_columns_B):
             column = []
             
             for k in range(len(B)):
@@ -30,6 +30,7 @@ def matrix_mult(A, B):
 
         result.append(new_row)
     return result
+
 
 
 
