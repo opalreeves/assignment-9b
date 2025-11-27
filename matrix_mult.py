@@ -1,4 +1,4 @@
-def dot_product(a, b):
+def dot_prod(a, b):
     if len(a) != len(b):
         return None
     
@@ -25,11 +25,12 @@ def matrix_mult(A, B):
             for k in range(len(B)):
                 column.append(B[k][j])
 
-            value = dot_product(A[i], column)
+            value = dot_prod(A[i], column)
             new_row.append(value)
 
         result.append(new_row)
     return result
+
 
 
 
